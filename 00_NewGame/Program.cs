@@ -7,23 +7,23 @@ using NewEnemy5;
 
 Enemy1 enemy1 = new Enemy1
 {
-    name = "Ernicio"
+    name = "Mr. Smith"
 };
 Enemy2 enemy2 = new Enemy2
 {
-    name = "Rodrigo"
+    name = "Detective Mills"
 };
 Enemy3 enemy3 = new Enemy3
 {
-    name = "Jamal"
+    name = "Rusty Ryan"
 };
 Enemy4 enemy4 = new Enemy4
 {
-    name = "Brad"
+    name = "Wardaddy"
 };
 Enemy5 enemy5 = new Enemy5
 {
-    name = "Jesus"
+    name = "The Narrator"
 };
 
 Console.WriteLine("Hello challenger what is you name?");
@@ -254,7 +254,7 @@ else
     Console.WriteLine("\nContinue on!");
 }
 
-Console.WriteLine("\nYour third challenger " + enemy3.name + " appears and he muscular and mean looking but you can tell physically slow. You say as long as I keep moving I should have no problem and the battle ensues!\n");
+Console.WriteLine("\nYour third challenger " + enemy3.name + " appears and he muscular and mean looking but you can tell he's physically slow. You say as long as I keep moving I should have no problem and the battle ensues!\n");
 
 Console.WriteLine(enemy3.name + ", HP: " + enemy3.healthPoints + " Damage: " + enemy3.damageDealt);
 Console.WriteLine(player.name + ", HP: " + player.healthPoints + "");
@@ -460,7 +460,7 @@ else
 
 Console.WriteLine("\nYour fifth and final challenger " + enemy5.name + " appears and he is a towering brute fast and strong, he exclaims you have no future go ahead and die! You think to yourself Oh My God may the lord be with me I am going to need every bit of help I can get to escape with my life. But as long as I close my eyes and go in headfirst no remorse I should have no problem I have made it this far I need to push on! And the battle ensues!\n");
 
-Console.WriteLine("Before this last fight I will give you a second chance to gain an advantage type door 1, door 2, or door 3 to choose a door. Behind that door chosen will be either something that will increase your odds or potentially hurt them, or type no and move on to the final round!\n");
+Console.WriteLine("Before this last fight I will give you a second chance to gain an advantage, type door 1, door 2, or door 3 to choose a door. Behind that door chosen will be either something that will increase your odds or potentially hurt them, or type no and move on to the final round!\n");
 
 string answer7 = Console.ReadLine();
 switch (answer7)
@@ -545,7 +545,7 @@ string answer6 = Console.ReadLine();
 switch (answer6)
 {
     case "escape" :
-    Console.WriteLine("\nYou escaped through the tunnel, into the light,and on to a nearby highway road. As soon as you looked around you were hit by a semi and instantly woke up jumping out of bed clutching your chest, OMG that was the craziest dream i have ever had you say as you lay back in bed to go to sleep and say to yourself maybe I shouldn't fall asleep to brad pit movies anymore!");
+    Console.WriteLine("\nYou escaped through the tunnel, into the light,and on to a nearby highway road. As soon as you looked around you were hit by a semi and instantly woke up jumping out of bed clutching your chest, OMG that was the craziest dream I have ever had you say as you lay back in bed to go to sleep and say to yourself maybe I shouldn't fall asleep to brad pit movies anymore!");
     Console.WriteLine("\nTHE END!\n");
     break;
 }
@@ -589,7 +589,7 @@ namespace NewEnemy1
         {
             healthPoints = 20;
             damageDealt = 2;
-            name = "Ernicio";
+            name = "Mr. Smith";
         }
     }
 }
@@ -606,7 +606,7 @@ namespace NewEnemy2
         {
             healthPoints = 40;
             damageDealt = 3;
-            name = "Rodrigo";
+            name = "Detective Mills";
         }
     }
 }
@@ -623,7 +623,7 @@ namespace NewEnemy3
         {
             healthPoints = 50;
             damageDealt = 4;
-            name = "Jamal";
+            name = "Rusty Ryan";
         }
     }
 }
@@ -640,7 +640,7 @@ namespace NewEnemy4
         {
             healthPoints = 60;
             damageDealt = 4;
-            name = "Brad";
+            name = "Wardaddy";
         }
     }
 }
@@ -657,7 +657,7 @@ namespace NewEnemy5
         {
             healthPoints = 80;
             damageDealt = 6;
-            name = "Jesus";
+            name = "The Narrator";
         }
     }
 }
