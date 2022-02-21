@@ -53,7 +53,7 @@ Console.WriteLine("\nIf you chose to stick around then here is the deal...\nYou 
 Console.WriteLine("\nYour first challenger " + enemy1.name + " appears and he is a scrawny thing. you say I can do this no problem and the battle ensues!\n");
 
 Console.WriteLine(enemy1.name + ", HP: " + enemy1.healthPoints + " Damage: " + enemy1.damageDealt);
-Console.WriteLine(player.name + ", HP: " + player.healthPoints + "");
+Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
 Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) High kick + 6 - 2 Life points!\n\n");
     
     while(player.healthPoints > 0 && enemy1.healthPoints > 0 )
@@ -65,34 +65,34 @@ Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 l
         if(numChosen == 1)
         {
         Console.WriteLine("Light punch + 2 damage!\n");
-        enemy1.healthPoints = enemy1.healthPoints - 2;
+        enemy1.healthPoints = enemy1.healthPoints - 2 - player.damageDealt;
         player.healthPoints = player.healthPoints - 2;
         Console.WriteLine(enemy1.name + ", HP: " + enemy1.healthPoints + " Damage: " + enemy1.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 2)
     {
         Console.WriteLine("Heavy punch + 4 damage - 1 life point!\n");
-        enemy1.healthPoints = enemy1.healthPoints - 4;
+        enemy1.healthPoints = enemy1.healthPoints - 4 - player.damageDealt;
         player.healthPoints = player.healthPoints - 3;
         Console.WriteLine(enemy1.name + ", HP: " + enemy1.healthPoints + " Damage: " + enemy1.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 3)
     {
         Console.WriteLine("Light kick + 3 damage - 1 life point!\n");
-        enemy1.healthPoints = enemy1.healthPoints - 3;
+        enemy1.healthPoints = enemy1.healthPoints - 3 - player.damageDealt;
         player.healthPoints = player.healthPoints - 3;
         Console.WriteLine(enemy1.name + ", HP: " + enemy1.healthPoints + " Damage: " + enemy1.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 4)
     {
         Console.WriteLine("Heavy kick + 6 damage - 2 Life points!\n");
-        enemy1.healthPoints = enemy1.healthPoints - 6;
+        enemy1.healthPoints = enemy1.healthPoints - 6 - player.damageDealt;
         player.healthPoints = player.healthPoints - 4;
         Console.WriteLine(enemy1.name + ", HP: " + enemy1.healthPoints + " Damage: " + enemy1.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else
     {
@@ -155,7 +155,7 @@ else
 Console.WriteLine("\nYour second challenger " + enemy2.name + " appears looking angry and as confused as you are he is ready to kill. You say here we go again just get me out! And the battle ensues!\n");
 
 Console.WriteLine(enemy2.name + ", HP: " + enemy2.healthPoints + " Damage: " + enemy2.damageDealt);
-Console.WriteLine(player.name + ", HP: " + player.healthPoints + "");
+Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
 Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) High kick + 6 - 2 Life points!\n\n");
     
     while(player.healthPoints > 0 && enemy2.healthPoints > 0 )
@@ -167,34 +167,34 @@ Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 l
         if(numChosen == 1)
         {
         Console.WriteLine("Light punch + 2 damage!\n");
-        enemy2.healthPoints = enemy2.healthPoints - 2;
+        enemy2.healthPoints = enemy2.healthPoints - 2 - player.damageDealt;
         player.healthPoints = player.healthPoints - 3;
         Console.WriteLine(enemy2.name + ", HP: " + enemy2.healthPoints + " Damage: " + enemy2.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 2)
     {
         Console.WriteLine("Heavy punch + 4 damage - 1 life point!\n");
-        enemy2.healthPoints = enemy2.healthPoints - 4;
+        enemy2.healthPoints = enemy2.healthPoints - 4 - player.damageDealt;
         player.healthPoints = player.healthPoints - 4;
         Console.WriteLine(enemy2.name + ", HP: " + enemy2.healthPoints + " Damage: " + enemy2.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 3)
     {
         Console.WriteLine("Light kick + 3 damage - 1 life point!\n");
-        enemy2.healthPoints = enemy2.healthPoints - 3;
+        enemy2.healthPoints = enemy2.healthPoints - 3 - player.damageDealt;
         player.healthPoints = player.healthPoints - 4;
         Console.WriteLine(enemy2.name + ", HP: " + enemy2.healthPoints + " Damage: " + enemy2.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 4)
     {
         Console.WriteLine("Heavy kick + 6 damage - 2 Life points!\n");
-        enemy2.healthPoints = enemy2.healthPoints - 6;
+        enemy2.healthPoints = enemy2.healthPoints - 6 - player.damageDealt;
         player.healthPoints = player.healthPoints - 5;
         Console.WriteLine(enemy2.name + ", HP: " + enemy2.healthPoints + " Damage: " + enemy2.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else
     {
@@ -257,7 +257,7 @@ else
 Console.WriteLine("\nYour third challenger " + enemy3.name + " appears and he muscular and mean looking but you can tell he's physically slow. You say as long as I keep moving I should have no problem and the battle ensues!\n");
 
 Console.WriteLine(enemy3.name + ", HP: " + enemy3.healthPoints + " Damage: " + enemy3.damageDealt);
-Console.WriteLine(player.name + ", HP: " + player.healthPoints + "");
+Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
 Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) High kick + 6 - 2 Life points!\n\n");
     
     while(player.healthPoints > 0 && enemy3.healthPoints > 0 )
@@ -269,34 +269,34 @@ Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 l
         if(numChosen == 1)
         {
         Console.WriteLine("Light punch + 2 damage!\n");
-        enemy3.healthPoints = enemy3.healthPoints - 2;
+        enemy3.healthPoints = enemy3.healthPoints - 2 - player.damageDealt;
         player.healthPoints = player.healthPoints - 4;
         Console.WriteLine(enemy3.name + ", HP: " + enemy3.healthPoints + " Damage: " + enemy3.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 2)
     {
         Console.WriteLine("Heavy punch + 4 damage - 1 life point!\n");
-        enemy3.healthPoints = enemy3.healthPoints - 4;
+        enemy3.healthPoints = enemy3.healthPoints - 4 - player.damageDealt;
         player.healthPoints = player.healthPoints - 5;
         Console.WriteLine(enemy3.name + ", HP: " + enemy3.healthPoints + " Damage: " + enemy3.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 3)
     {
         Console.WriteLine("Light kick + 3 damage - 1 life point!\n");
-        enemy3.healthPoints = enemy3.healthPoints - 3;
+        enemy3.healthPoints = enemy3.healthPoints - 3 - player.damageDealt;
         player.healthPoints = player.healthPoints - 5;
         Console.WriteLine(enemy3.name + ", HP: " + enemy3.healthPoints + " Damage: " + enemy3.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 4)
     {
         Console.WriteLine("Heavy kick + 6 damage - 2 Life points!\n");
-        enemy3.healthPoints = enemy3.healthPoints - 6;
+        enemy3.healthPoints = enemy3.healthPoints - 6 - player.damageDealt;
         player.healthPoints = player.healthPoints - 6;
         Console.WriteLine(enemy3.name + ", HP: " + enemy3.healthPoints + " Damage: " + enemy3.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else
     {
@@ -359,7 +359,7 @@ else
 Console.WriteLine("\nYour fourth challenger " + enemy4.name + " appears and he has an inhuman look in his eyes, that look that has seen more than most could stomach. You think to yourself this guy definitely has a screw loose but as long as I keep on my toes I should have no problem and the battle ensues!\n");
 
 Console.WriteLine(enemy4.name + ", HP: " + enemy4.healthPoints + " Damage: " + enemy4.damageDealt);
-Console.WriteLine(player.name + ", HP: " + player.healthPoints + "");
+Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
 Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) High kick + 6 - 2 Life points!\n\n");
     
     while(player.healthPoints > 0 && enemy4.healthPoints > 0 )
@@ -371,34 +371,34 @@ Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 l
         if(numChosen == 1)
         {
         Console.WriteLine("Light punch + 2 damage!\n");
-        enemy4.healthPoints = enemy4.healthPoints - 2;
+        enemy4.healthPoints = enemy4.healthPoints - 2 - player.damageDealt;
         player.healthPoints = player.healthPoints - 4;
         Console.WriteLine(enemy4.name + ", HP: " + enemy4.healthPoints + " Damage: " + enemy4.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 2)
     {
         Console.WriteLine("Heavy punch + 4 damage - 1 life point!\n");
-        enemy4.healthPoints = enemy4.healthPoints - 4;
+        enemy4.healthPoints = enemy4.healthPoints - 4 - player.damageDealt;
         player.healthPoints = player.healthPoints - 5;
         Console.WriteLine(enemy4.name + ", HP: " + enemy4.healthPoints + " Damage: " + enemy4.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 3)
     {
         Console.WriteLine("Light kick + 3 damage - 1 life point!\n");
-        enemy4.healthPoints = enemy4.healthPoints - 3;
+        enemy4.healthPoints = enemy4.healthPoints - 3 - player.damageDealt;
         player.healthPoints = player.healthPoints - 5;
         Console.WriteLine(enemy4.name + ", HP: " + enemy4.healthPoints + " Damage: " + enemy4.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 4)
     {
         Console.WriteLine("Heavy kick + 6 damage - 2 Life points!\n");
-        enemy4.healthPoints = enemy4.healthPoints - 6;
+        enemy4.healthPoints = enemy4.healthPoints - 6 - player.damageDealt;
         player.healthPoints = player.healthPoints - 6;
         Console.WriteLine(enemy4.name + ", HP: " + enemy4.healthPoints + " Damage: " + enemy4.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else
     {
@@ -483,7 +483,7 @@ switch (answer7)
 }
 
 Console.WriteLine(enemy5.name + ", HP: " + enemy5.healthPoints + " Damage: " + enemy5.damageDealt);
-Console.WriteLine(player.name + ", HP: " + player.healthPoints + "");
+Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
 Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) High kick + 6 - 2 Life points!\n\n");
     
     while(player.healthPoints > 0 && enemy5.healthPoints > 0 )
@@ -495,34 +495,34 @@ Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 l
         if(numChosen == 1)
         {
         Console.WriteLine("Light punch + 2 damage!\n");
-        enemy5.healthPoints = enemy5.healthPoints - 2;
+        enemy5.healthPoints = enemy5.healthPoints - 2 - player.damageDealt;
         player.healthPoints = player.healthPoints - 4;
         Console.WriteLine(enemy5.name + ", HP: " + enemy5.healthPoints + " Damage: " + enemy5.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 2)
     {
         Console.WriteLine("Heavy punch + 4 damage - 1 life point!\n");
-        enemy5.healthPoints = enemy5.healthPoints - 4;
+        enemy5.healthPoints = enemy5.healthPoints - 4 - player.damageDealt;
         player.healthPoints = player.healthPoints - 5;
         Console.WriteLine(enemy5.name + ", HP: " + enemy5.healthPoints + " Damage: " + enemy5.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 3)
     {
         Console.WriteLine("Light kick + 3 damage - 1 life point!\n");
-        enemy5.healthPoints = enemy5.healthPoints - 3;
+        enemy5.healthPoints = enemy5.healthPoints - 3 - player.damageDealt;
         player.healthPoints = player.healthPoints - 5;
         Console.WriteLine(enemy5.name + ", HP: " + enemy5.healthPoints + " Damage: " + enemy5.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else if(numChosen == 4)
     {
         Console.WriteLine("Heavy kick + 6 damage - 2 Life points!\n");
-        enemy5.healthPoints = enemy5.healthPoints - 6;
+        enemy5.healthPoints = enemy5.healthPoints - 6 - player.damageDealt;
         player.healthPoints = player.healthPoints - 6;
         Console.WriteLine(enemy5.name + ", HP: " + enemy5.healthPoints + " Damage: " + enemy5.damageDealt);
-        Console.WriteLine(player.name + ", HP: " + player.healthPoints);
+        Console.WriteLine(player.name + ", HP: " + player.healthPoints + " Damage: " + player.damageDealt);
         Console.WriteLine("1.) Light punch + 2 damage!\n2.) Heavy punch + 4 damage - 1 life points!\n3.) Light kick + 3 damage - 1 life points!\n4.) Heavy kick + 6 - 2 Life points!\n\n");    }
     else
     {
